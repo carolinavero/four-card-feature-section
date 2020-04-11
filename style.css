@@ -28,7 +28,6 @@ body {
     background-color: var(--very-light-gray);
     color: var(--grayish-blue);
     margin: 0 auto;
-    letter-spacing: 1px;
 }
 h1 {
     font-weight: 200;
@@ -67,6 +66,7 @@ p {
         'cardBlue'; 
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-bottom: 3rem;
 }
 .card {
     background-color: #fff;
@@ -99,22 +99,16 @@ p {
     background-image: url(images/icon-calculator.svg);
 }
 footer {
-    position: relative;
-    padding: 15px;
-    text-align: center;
-    font-size: 10px;
-    margin-top: 2rem;
+    display: none;
 }
-footer a {
-    text-decoration: none;
-    color: var(--grayish-blue);
-}
+
 
 @media(min-width: 600px) {
 
     body {
         max-width: 1440px;
         height: 100vh;
+        padding: 0;
     }
     h1 {
         font-size: 2rem;
@@ -133,6 +127,7 @@ footer a {
             'cardCyan cardOrange cardBlue';
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
+        margin-bottom: 0;
     }
 
     .card-1 {
@@ -158,10 +153,4 @@ footer a {
         grid-row-end: 4;
     }
 
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        font-size: 12px;
-    }
 }
